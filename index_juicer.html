@@ -34,11 +34,6 @@
     <!-- scroll snap plugin -->
     <!--<link rel="stylesheet" href="css/jquery-scroll-snap.css">-->
 
-    <!-- Social-feed css -->
-    <link href="bower_components/social-feed/css/jquery.socialfeed.css" rel="stylesheet" type="text/css">
-    <!-- font-awesome for social network icons -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -48,32 +43,32 @@
 
 <!-- Add your site or application content here -->
 
- Fixed navbar
-<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
-<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<a class="navbar-brand" href="#">Ramya Srinivasan</a>
-<div class="collapse navbar-collapse" id="navbarCollapse">
-<ul class="navbar-nav mr-auto">
-<li class="nav-item active">
-<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Sessions</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Social</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Slideshow</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Message Me</a>
-</li>
-</ul>
-</div>
-</nav>
+<!-- Fixed navbar -->
+<!--<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">-->
+<!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--<span class="navbar-toggler-icon"></span>-->
+<!--</button>-->
+<!--<a class="navbar-brand" href="#">Ramya Srinivasan</a>-->
+<!--<div class="collapse navbar-collapse" id="navbarCollapse">-->
+<!--<ul class="navbar-nav mr-auto">-->
+<!--<li class="nav-item active">-->
+<!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link" href="#">Sessions</a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link" href="#">Social</a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link" href="#">Slideshow</a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link" href="#">Message Me</a>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</nav>-->
 <div class="main">
     <!-- A photo of di in action with her name on overlay -->
     <section class="snap">
@@ -151,12 +146,9 @@
 
     <!-- Social Feed -->
     <section class="snap vertical-align">
-        <div class="my-fb-container"> </div>
-        <div class="my-twitter-container"> </div>
-        <div class="img-fb-container"> </div>
-        <!--<div>-->
-            <!--<ul class="juicer-feed" data-feed-id="freecodecamphyderabad" data-per="3"></ul>-->
-        <!--</div>-->
+        <div>
+            <ul class="juicer-feed" data-feed-id="freecodecamphyderabad" data-per="3"></ul>
+        </div>
     </section>
 
     <!-- Guru Story -->
@@ -213,53 +205,6 @@
         </div>
     </section>
 
-    <section class="vertical-align">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-6">
-                    <div class="well well-sm">
-                        <form class="form-horizontal" enctype="text/plain" action="mailto:ramyasrinivasan.rs@gmail.com" method="GET">
-                            <fieldset>
-                                <legend class="text-center">Send me a message</legend>
-
-                                <!-- Name input-->
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label" for="name">Name</label>
-                                    <div class="col-md-9">
-                                        <input id="name" name="subject" type="text" placeholder="Your name" class="form-control">
-                                    </div>
-                                </div>
-
-                                <!-- Email input-->
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label" for="email">Your E-mail</label>
-                                    <div class="col-md-9">
-                                        <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
-                                    </div>
-                                </div>
-
-                                <!-- Message body -->
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label" for="message">Your message</label>
-                                    <div class="col-md-9">
-                                        <textarea class="form-control" id="message" name="body" placeholder="Please enter your message here..." rows="5"></textarea>
-                                    </div>
-                                </div>
-
-                                <!-- Form actions -->
-                                <div class="form-group">
-                                    <div class="col-md-12 text-right">
-                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 </div>
 
 <footer class="footer">
@@ -271,21 +216,10 @@
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
-<!--<script src="js/jquery-scroll-snap.js"></script>-->
-<!-- jQuery -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Codebird.js - required for TWITTER -->
-<script src="bower_components/codebird-js/codebird.js"></script>
-<!-- doT.js for rendering templates -->
-<script src="bower_components/doT/doT.min.js"></script>
-<!-- Moment.js for showing "time ago" and/or "date"-->
-<script src="bower_components/moment/min/moment.min.js"></script>
-<!-- Moment Locale to format the date to your language (eg. italian lang)-->
-<script src="bower_components/moment/locale/it.js"></script>
-<!-- Social-feed js -->
-<script src="bower_components/social-feed/js/jquery.socialfeed.js"></script>
 <script src="js/jquery.jqtimeline.js"></script>
+<!--<script src="js/jquery-scroll-snap.js"></script>-->
 <script src="js/jquery.onepage-scroll.min.js"></script>
+<script src="js/main.js"></script>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -293,7 +227,6 @@
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
@@ -311,26 +244,6 @@
     }(window, document, 'script', 'ga'));
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
-</script>
-
-<!-- Facebook SDK -->
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : '685249138313808',
-            xfbml      : true,
-            version    : 'v2.8'
-        });
-        FB.AppEvents.logPageView();
-    };
-
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
 </script>
 </body>
 </html>
