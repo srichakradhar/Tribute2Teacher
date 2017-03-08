@@ -121,22 +121,8 @@ body {
     color: honeydew;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5
-}
-
 body > .container {
     padding: 60px 15px 0
-}
-
-.footer > .container {
-    padding-right: 15px;
-    padding-left: 15px
 }
 
 code {
@@ -153,8 +139,76 @@ body.lock-scroll{
     justify-content: center;
 }
 
+#sessions {
+    background: floralwhite;
+}
+
+#social {
+    padding: 0 30px 0 15px;
+    background: #00aba9;
+}
+
 .fb-follow{
     margin: 0 36%
+}
+
+#slideshow {
+    background: #f3c030;
+}
+
+#message_me {
+    background: #ffc107;
+}
+
+#message_me img{
+    width: 40%;
+    height: 40%;
+    border: 5px solid black;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    background: #fa6800;
+}
+
+.love i{
+    color: red;
+}
+
+.love a{
+    color: green;
+}
+
+footer .col-xs-3{
+    margin: auto 0 auto auto;
+    line-height:45px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5
+}
+
+.footer a {
+    color: #70726F;
+    font-size: 20px;
+    padding: 10px;
+    /*border-right: 1px solid #70726F;*/
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.footer a:hover {
+    color: black;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.footer > .row {
+    padding: 0 20px;
 }
 
 /* ==========================================================================

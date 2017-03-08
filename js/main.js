@@ -63,13 +63,18 @@ $('document').ready(function () {
         facebook:{
             accounts: ['@teslamotors'],  //Array: Specify a list of accounts from which to pull wall posts
             limit: 5,                                   //Integer: max number of posts to load
-            access_token: 'EAAJf1n990rcBADADlbroXR8lApZAUnVk2lMgSLoGRrpZBCc5EsoiCuLB93g54nemvC9Wa7FhOSOCZBVUEChocCjENWwicKkIJGScz86MAdaZBRrbLsZCjz1DahhdbMW2JG7cnPcPkZAS0z4SvVXyem3xhEvv4jpGq14ZC0tBCZAZCaErnBEyYLQi5jZBWCnxnLosUZD'
-            //'EAAJf1n990rcBAGPoC9I17tAy9TVIliqdujcmCZCZA6R2DhnU8zlF9bOZBazN9tC2ZBnGcgkaqCfSCPzSrzdwvnB2TaE3i1YeWTSlTmGyhk8anuFFFSfgdm9eZBMFPZBv0kWFcxAHnebn0Nak4gaQZCXbosq50t0prcyaTOKcKuK5FW5HBhFvADE7LJm4vjVM6oZD'
+            access_token:'EAAJf1n990rcBAH5C6TZCbKoZA4s7msZCFS6NUlFAnZAZCBjborJO3zg6p5D8RJBnVOn5ziA5UJo9Jm00XMFNsya0FXfLQArY6PSfWElEc9tj2Yfz2JmpXp4OuX3YLnvxwMHeDXlzTRZBEXI2VQfOXs2VzVlbVn5WcZD'
+            //'EAAJf1n990rcBADADlbroXR8lApZAUnVk2lMgSLoGRrpZBCc5EsoiCuLB93g54nemvC9Wa7FhOSOCZBVUEChocCjENWwicKkIJGScz86MAdaZBRrbLsZCjz1DahhdbMW2JG7cnPcPkZAS0z4SvVXyem3xhEvv4jpGq14ZC0tBCZAZCaErnBEyYLQi5jZBWCnxnLosUZD'
             //'668324820013751|ym_QSR6bcysov5x8certBjNz_Ow' //String: "APP_ID|APP_SECRET" '668324820013751|95cfde262f8f3c9fa10b95d5fa2ff8e3'
         },
 
         // GENERAL SETTINGS
         length:400                                      //Integer: For posts with text longer than this length, show an ellipsis.
+    });
+
+    $("nav a").on("click", function(){
+        $("nav").find(".active").removeClass("active");
+        $(this).parent().addClass("active");
     });
 
 });
