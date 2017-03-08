@@ -59,10 +59,13 @@ $('document').ready(function () {
         //     access_token: '608730134.1677ed0.9b9679682ad04b0f8f015e36b472a96f' //String: Instagram access token
         // },
 
+        // FACEBOOK
         facebook:{
             accounts: ['@teslamotors'],  //Array: Specify a list of accounts from which to pull wall posts
-            limit: 2,                                   //Integer: max number of posts to load
-            access_token: 'EAAJvOv94ylABADeAOYawHitUqZAxJwMuNUqWT7bi3aQaAmOTRl5RTbKcb8ga2641yk8GFTMiBmWVNFRj0EAbjei1rwwiBb5DTxjvQePbjj1ewvWMCMjipEBc3ZBASbwlZCOCL0lUKMHJQ79G8iLMRaC81ur3S0ZD'  //String: "APP_ID|APP_SECRET" 685249138313808|8086e39c8e804555125f30f71ccb8135 685249138313808|sMbv4Jp4qH_MQd1UCn0brb_kRAc
+            limit: 5,                                   //Integer: max number of posts to load
+            access_token: 'EAAJf1n990rcBADADlbroXR8lApZAUnVk2lMgSLoGRrpZBCc5EsoiCuLB93g54nemvC9Wa7FhOSOCZBVUEChocCjENWwicKkIJGScz86MAdaZBRrbLsZCjz1DahhdbMW2JG7cnPcPkZAS0z4SvVXyem3xhEvv4jpGq14ZC0tBCZAZCaErnBEyYLQi5jZBWCnxnLosUZD'
+            //'EAAJf1n990rcBAGPoC9I17tAy9TVIliqdujcmCZCZA6R2DhnU8zlF9bOZBazN9tC2ZBnGcgkaqCfSCPzSrzdwvnB2TaE3i1YeWTSlTmGyhk8anuFFFSfgdm9eZBMFPZBv0kWFcxAHnebn0Nak4gaQZCXbosq50t0prcyaTOKcKuK5FW5HBhFvADE7LJm4vjVM6oZD'
+            //'668324820013751|ym_QSR6bcysov5x8certBjNz_Ow' //String: "APP_ID|APP_SECRET" '668324820013751|95cfde262f8f3c9fa10b95d5fa2ff8e3'
         },
 
         // GENERAL SETTINGS

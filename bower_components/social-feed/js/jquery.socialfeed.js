@@ -306,7 +306,8 @@ if (typeof Object.create !== 'function') {
                             var username = account.substr(1);
                             Feed.facebook.utility.getUserId(username, function(userdata) {
                                 if (userdata.id !== '') {
-                                    request_url = Feed.facebook.graph + 'v2.4/' + '100001434041089' + '/posts'+ fields + limit + query_extention; //userdata.id 894615703929556
+                                    // Personal numeric ID: 100001434041089 (srichakradharreddy) 100000483163647 (ramya.srinivasan.54)
+                                    request_url = Feed.facebook.graph + 'v2.4/' + 'me' + '/posts'+ fields + limit + query_extention; //userdata.id 894615703929556
                                     proceed(request_url);
                                 }
                             });

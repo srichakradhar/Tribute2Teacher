@@ -41,6 +41,17 @@
 
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=668324820013751";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -48,31 +59,33 @@
 
 <!-- Add your site or application content here -->
 
- Fixed navbar
+Fixed navbar
 <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
-<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<a class="navbar-brand" href="#">Ramya Srinivasan</a>
-<div class="collapse navbar-collapse" id="navbarCollapse">
-<ul class="navbar-nav mr-auto">
-<li class="nav-item active">
-<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Sessions</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Social</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Slideshow</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Message Me</a>
-</li>
-</ul>
-</div>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Ramya Srinivasan</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sessions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Social</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Slideshow</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Message Me</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 <div class="main">
     <!-- A photo of di in action with her name on overlay -->
@@ -151,12 +164,17 @@
 
     <!-- Social Feed -->
     <section class="snap vertical-align">
-        <div class="my-fb-container"> </div>
-        <div class="my-twitter-container"> </div>
-        <div class="img-fb-container"> </div>
+        <div class="my-fb-container">
+            <div class="fb-follow" data-href="https://www.facebook.com/IMeditateHyderabad" data-layout="standard"
+                 data-size="small" data-show-faces="true"></div>
+        </div>
+        <div class="my-twitter-container"></div>
+        <div class="img-fb-container"></div>
+
         <!--<div>-->
-            <!--<ul class="juicer-feed" data-feed-id="freecodecamphyderabad" data-per="3"></ul>-->
+        <!--<ul class="juicer-feed" data-feed-id="freecodecamphyderabad" data-per="3"></ul>-->
         <!--</div>-->
+
     </section>
 
     <!-- Guru Story -->
@@ -218,7 +236,8 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-6">
                     <div class="well well-sm">
-                        <form class="form-horizontal" enctype="text/plain" action="mailto:ramyasrinivasan.rs@gmail.com" method="GET">
+                        <form class="form-horizontal" enctype="text/plain" action="mailto:ramyasrinivasan.rs@gmail.com"
+                              method="GET">
                             <fieldset>
                                 <legend class="text-center">Send me a message</legend>
 
@@ -226,7 +245,8 @@
                                 <div class="form-group">
                                     <label class="col-md-3 control-label" for="name">Name</label>
                                     <div class="col-md-9">
-                                        <input id="name" name="subject" type="text" placeholder="Your name" class="form-control">
+                                        <input id="name" name="subject" type="text" placeholder="Your name"
+                                               class="form-control">
                                     </div>
                                 </div>
 
@@ -234,7 +254,8 @@
                                 <div class="form-group">
                                     <label class="col-md-3 control-label" for="email">Your E-mail</label>
                                     <div class="col-md-9">
-                                        <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                        <input id="email" name="email" type="text" placeholder="Your email"
+                                               class="form-control">
                                     </div>
                                 </div>
 
@@ -242,7 +263,8 @@
                                 <div class="form-group">
                                     <label class="col-md-3 control-label" for="message">Your message</label>
                                     <div class="col-md-9">
-                                        <textarea class="form-control" id="message" name="body" placeholder="Please enter your message here..." rows="5"></textarea>
+                                        <textarea class="form-control" id="message" name="body"
+                                                  placeholder="Please enter your message here..." rows="5"></textarea>
                                     </div>
                                 </div>
 
@@ -262,11 +284,11 @@
 
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p><span class="text-muted">Ramya Srinivasan</span> ~ Full Time Art of Living Faculty</p>
-    </div>
-</footer>
+<!--<footer class="footer">-->
+<!--<div class="container">-->
+<!--<p><span class="text-muted">Ramya Srinivasan</span> ~ Full Time Art of Living Faculty</p>-->
+<!--</div>-->
+<!--</footer>-->
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
@@ -315,19 +337,22 @@
 
 <!-- Facebook SDK -->
 <script>
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function () {
         FB.init({
-            appId      : '668324820013751',
-            xfbml      : true,
-            version    : 'v2.8'
+            appId: '668324820013751',
+            xfbml: true,
+            version: 'v2.8'
         });
         FB.AppEvents.logPageView();
     };
 
-    (function(d, s, id){
+    (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
         js.src = "//connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
